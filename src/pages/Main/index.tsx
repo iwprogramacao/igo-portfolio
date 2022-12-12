@@ -1,5 +1,11 @@
 import { Button } from "../../components/Button";
 import {
+  ContactActives,
+  ContactContainer,
+  ContactContent,
+  ExamplesContainer,
+  ExamplesContent,
+  Footer,
   IntroContainer,
   MainContainer,
   Subtitle,
@@ -15,6 +21,12 @@ import nodeLogo from "../../assets/nodeLogo.png";
 import postgreLogo from "../../assets/postgreLogo.png";
 import reactLogo from "../../assets/reactLogo.png";
 import styledLogo from "../../assets/styledLogo.svg";
+import doctorCareExample from "../../assets/mockups/doctorCareLaptop2.png";
+import dtMoneyExample from "../../assets/mockups/dtmoneyLaptop2.png";
+import crachaExample from "../../assets/mockups/crachaCelular2.png";
+import whatsAppLogo from "../../assets/whatsappLogo.png";
+import instagramLogo from "../../assets/instagramLogo.png";
+import emailIcon from "../../assets/emailIcon.png";
 
 export function Main() {
   return (
@@ -29,8 +41,9 @@ export function Main() {
         </IntroContainer>
         <Subtitle>
           <p>
-            Que tal criarmos um website completo <br /> com as mais atuais
-            tecnologias do mercado?
+            Que tal criarmos um <strong>website completo</strong> <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; com as
+            tecnologias mais atuais do mercado?
           </p>
           <a href="#">
             <Button>Tenho interesse</Button>
@@ -93,6 +106,65 @@ export function Main() {
           </TechsSymbolsContainer>
         </div>
       </TechnologiesContainer>
+      <ExamplesContainer>
+        <div className="wrapper">
+          <p>Veja alguns exemplos</p>
+          <ExamplesContent>
+            <img src={doctorCareExample} />
+            <img
+              src={crachaExample}
+              style={{
+                width: 280,
+                position: "relative",
+                top: 250,
+                left: 100,
+                zIndex: "-1",
+              }}
+            />
+            <img src={dtMoneyExample} />
+          </ExamplesContent>
+        </div>
+      </ExamplesContainer>
+      <ContactContainer>
+        <div className="wrapper">
+          <ContactContent>
+            <span>Ficou interessado?</span>
+            <strong>Entre em contato!</strong>
+          </ContactContent>
+          <ContactActives>
+            <a
+              href="https://wa.me/5545988207140"
+              target="_blank"
+            >
+              <img
+                src={whatsAppLogo}
+                alt="Logo WhatsApp"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/igo.codes/"
+              target="_blank"
+            >
+              <img
+                src={instagramLogo}
+                alt="Logo Instagram"
+              />
+            </a>
+            <a
+              href="mailto:iw.programacao@gmail.com"
+              target="_blank"
+            >
+              <img
+                src={emailIcon}
+                alt="Email"
+              />
+            </a>
+          </ContactActives>
+        </div>
+      </ContactContainer>
+      <Footer>
+        <p>I GO - Todos os direitos reservados</p>
+      </Footer>
     </MainContainer>
   );
 }
