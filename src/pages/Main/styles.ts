@@ -13,12 +13,18 @@ export const IntroContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media screen and (max-width: 1000px) {
+    display: flex;
+
+    flex-direction: column;
+  }
 `;
 
 export const Title = styled.div`
   height: 300px;
   display: grid;
-  grid-template-columns: 400px 200px 400px;
+  grid-template-columns: 1fr 200px 1fr;
   align-items: center;
   gap: 4rem;
 
@@ -26,7 +32,7 @@ export const Title = styled.div`
     font-family: "Lastica";
     font-size: 8rem;
     font-weight: bold;
-    text-align: center;
+    text-align: right;
   }
 
   img {
@@ -34,10 +40,11 @@ export const Title = styled.div`
     height: 200px;
   }
 
-  small {
+  h2 {
     font-family: "Roboto";
     font-size: 3rem;
     text-transform: uppercase;
+    text-align: left;
     font-weight: 400;
   }
 `;
@@ -50,7 +57,7 @@ export const Subtitle = styled.div`
   gap: 2rem;
   align-items: center;
 
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
 `;
 
 export const TechnologiesContainer = styled.div`
@@ -58,10 +65,12 @@ export const TechnologiesContainer = styled.div`
   background-color: ${({ theme }) => theme["white"]};
   display: flex;
   align-items: center;
+  margin-bottom: 10rem;
 
   h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     font-size: 3rem;
+    text-align: center;
   }
 `;
 
@@ -69,7 +78,7 @@ export const TechsSymbolsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
 
   div {
     display: flex;
@@ -83,7 +92,7 @@ export const TechsSymbolsContainer = styled.div`
     }
 
     span {
-      font-size: 1rem;
+      font-size: 1.125rem;
       text-align: center;
     }
   }

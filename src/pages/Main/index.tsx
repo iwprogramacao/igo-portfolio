@@ -24,13 +24,13 @@ export function Main() {
           <Title>
             <span>I GO</span>
             <img src={logoGreen} />
-            <small>Webthinking</small>
+            <h2>Webthinking</h2>
           </Title>
         </IntroContainer>
         <Subtitle>
           <p>
-            Que tal criarmos um website completo com as mais atuais tecnologias
-            do mercado?
+            Que tal criarmos um website completo <br /> com as mais atuais
+            tecnologias do mercado?
           </p>
           <a href="#">
             <Button>Tenho interesse</Button>
