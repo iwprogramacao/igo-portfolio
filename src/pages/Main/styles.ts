@@ -65,6 +65,7 @@ export const TechnologiesContainer = styled.div`
   align-items: center;
 
   h2 {
+    color: ${({ theme }) => theme["orange-500"]};
     font-family: "Roboto";
     margin-bottom: 4rem;
     font-size: 3rem;
