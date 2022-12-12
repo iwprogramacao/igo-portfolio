@@ -45,7 +45,10 @@ export function Main() {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; com as
             tecnologias mais atuais do mercado?
           </p>
-          <a href="#">
+          <a
+            href="https://wa.me/5545988207140"
+            target="_blank"
+          >
             <Button>Tenho interesse</Button>
           </a>
         </Subtitle>
