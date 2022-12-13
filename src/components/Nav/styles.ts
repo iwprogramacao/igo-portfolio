@@ -29,5 +29,9 @@ export const NavContainer = styled.nav`
 
   @media (max-width: 1000px) {
     gap: 1.5rem;
+
+    a {
+      font-size: 1rem;
+    }
   }
 `;
