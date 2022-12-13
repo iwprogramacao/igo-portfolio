@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const ButtonContainer = styled.button`
-  margin-left: 48px;
   width: 18rem;
-  height: 6rem;
+  padding: 2rem;
+
   background-color: ${({ theme }) => theme["gray-900"]};
   border: 1px solid ${({ theme }) => theme["gray-900"]};
   color: ${({ theme }) => theme["gray-100"]};
@@ -13,5 +13,10 @@ export const ButtonContainer = styled.button`
     transition: background-color 100ms;
     background-color: ${({ theme }) => theme["green-300"]};
     color: ${({ theme }) => theme["gray-900"]};
+  }
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    padding: 1.5rem;
   }
 `;

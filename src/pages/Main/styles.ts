@@ -41,6 +41,29 @@ export const Title = styled.div`
     text-align: left;
     font-weight: 400;
   }
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 4rem;
+      text-align: center;
+    }
+
+    img {
+      margin-top: -30px;
+      width: 80px;
+      height: 80px;
+    }
+
+    h2 {
+      margin-top: -30px;
+      font-size: 2rem;
+      text-align: center;
+      font-weight: 400;
+    }
+  }
 `;
 
 export const Subtitle = styled.div`
@@ -50,11 +73,13 @@ export const Subtitle = styled.div`
   grid-template-columns: 6fr 4fr;
   gap: 2rem;
   align-items: center;
-
   margin-bottom: 8rem;
 
   strong {
     color: ${({ theme }) => theme["orange-500"]};
+  }
+
+  @media (max-width: 1000px) {
   }
 `;
 
@@ -70,6 +95,10 @@ export const TechnologiesContainer = styled.div`
     margin-bottom: 4rem;
     font-size: 3rem;
     text-align: right;
+  }
+
+  @media (max-width: 1000px) {
+    height: 1000px;
   }
 `;
 
@@ -95,6 +124,12 @@ export const TechsSymbolsContainer = styled.div`
       text-align: center;
     }
   }
+
+  @media (max-width: 1000px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4rem;
+  }
 `;
 
 export const ExamplesContainer = styled.div`
@@ -106,9 +141,29 @@ export const ExamplesContainer = styled.div`
     text-align: left;
     font-size: 3rem;
   }
+
+  @media (max-width: 1000px) {
+    p {
+      margin-bottom: 2rem;
+    }
+  }
 `;
 
-export const ExamplesContent = styled.div``;
+export const ExamplesContent = styled.div`
+  @media (max-width: 1000px) {
+    & img:nth-child(2) {
+      display: none;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 400px;
+    }
+  }
+`;
 
 export const ContactContainer = styled.div`
   height: 500px;
@@ -135,6 +190,17 @@ export const ContactContent = styled.div`
     color: ${({ theme }) => theme["gray-700"]};
     display: block;
   }
+
+  @media (max-width: 1000px) {
+    span {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    strong {
+      font-size: 2rem;
+    }
+  }
 `;
 
 export const ContactActives = styled.div`
@@ -144,6 +210,12 @@ export const ContactActives = styled.div`
   img {
     width: 60px;
     height: 60px;
+  }
+
+  @media (max-width: 1000px) {
+    gap: 1rem;
+    flex-direction: column;
+    margin-left: 2.5rem;
   }
 `;
 

@@ -41,9 +41,8 @@ export function Main() {
         </IntroContainer>
         <Subtitle>
           <p>
-            Que tal criarmos um <strong>website completo</strong> <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; com as
-            tecnologias mais atuais do mercado?
+            Que tal criarmos um <strong>website completo</strong> com <br />
+            as tecnologias mais atuais do mercado?
           </p>
           <a
             href="https://wa.me/5545988207140"

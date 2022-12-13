@@ -26,4 +26,8 @@ export const NavContainer = styled.nav`
     width: 56px;
     height: 56px;
   }
+
+  @media (max-width: 1000px) {
+    gap: 1.5rem;
+  }
 `;

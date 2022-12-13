@@ -6,7 +6,12 @@ export function Nav() {
     <NavContainer>
       <a href="">Projetos</a>
       <img src={logo} />
-      <a href="">Contate-nos</a>
+      <a
+        href="https://wa.me/5545988207140"
+        target="_blank"
+      >
+        Contate-nos
+      </a>
     </NavContainer>
   );
 }
